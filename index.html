@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Mihai! I build modern websites using HTML, CSS, and JavaScript. Explore my projects, experiments, and tutorials about web development.">
+    <!-- Keywords (not crucial, but can help a bit) -->
+    <meta name="keywords" content="web development, web developer, html, css, javascript, projects, portfolio, front-end, programming">
+    <!-- Author -->
+    <meta name="author" content="Mihai">
+    <!-- Open Graph for social media -->
+
+    <title>DMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6QFKR1NJP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F6QFKR1NJP');
+    </script>
+
+    <div id="pc-navbar">
+        <div id="logo-container">
+            <div class="logoc">
+              <img src="Images/dma_LOGO.png" class="lgo"></div>
+        </div>
+        <ul>
+            <li><button class="nv-btn" data-target="inv-nav1">Acasa</button></li>
+            <li><button class="nv-btn" data-target="cont">Limbaje</button></li>
+            <li><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(2, 99, 156);">Proiecte</span></button></li>
+            <li><button class="nv-btn" data-target="all-contact-container">Contact</button></li>
+        </ul>
+    </div>
+    <div id="mobile-navbar">
+        <div id="logo-container">
+            <div class="logoc">
+              <img src="Images/dma_LOGO.png" class="lgo"></div>
+        </div>
+        <img src="Images/menu.svg" id="menu">
+    </div>
+    
+    <!--PC-->
+    <div id="pc-hero" >
+        <div id="inv-nav1" class="inv-nav"></div>
+        <div id="hero">
+        <!-- HERO 1 -->
+        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Hello, I’m <span id="mihai" class="purple">Mihai</span></p>
+            <!--<div class="container">
+                <span class="text first-tect">I'm a</span>
+            </div>-->
+            <p id="text-hero2" class="hero-text">Construim site-uri complete – de la design și structură până la configurarea domeniului și lansarea online, gestionând fiecare detaliu pentru a asigura o prezență online profesională și fără probleme.</p>
+            <div id="btn-container">
+                <button class="btn" id="btn1">Proiecte</button>
+                <button class="btn" id="btn2">Contact</button>
+            </div>
+        </div>
+        <!-- HERO 2 -->
+        <div id="video-container" class="hero-el">
+            <video autoplay muted loop id="video">
+                <source src="Images/Vdeeo.mp4"></source>
+            </video>
+        </div>
+    </div>
+    </div>
+
+    <div id="mobile-hero" >
+        <div id='inv-nav2' class="inv-nav"></div>
+        <div id="hero">
+        <!-- HERO 1 -->
+        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Hello, I’m <span id="mihai" class="purple">Mihai</span></p>
+            <p id="text-hero2" class="hero-text"> Construim site-uri complete – de la design și structură până la configurarea domeniului și lansarea online, gestionând fiecare detaliu pentru a asigura o prezență online profesională și fără probleme.</p>
+        </div>
+        <!-- HERO 2 -->
+        <div id="video-container" class="hero-el">
+            <video autoplay muted loop id="video">
+                <source src="Images/Vdeeo.mp4"></source>
+            </video>
+        </div>
+        <div id="btn-container">
+                <button class="btn" id="btn3">Proiecte</button>
+                <button class="btn" id="btn4">Contact</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="dropdown-container">
+        <div class="el"><button class="nv-btn" data-target="mobile-hero">Acasa</button></div>
+        <div class="el"><button class="nv-btn" data-target="cont">Limbaje</button></div>
+        <div class="el"><button class="nv-btn" data-target="all-projects-container"><span style="color: rgb(2, 99, 156);">Proiecte</span></button></div>
+        <div class="el"><button class="nv-btn" data-target="all-contact-container">Contact</button></div>
+    </div>
+
+    <div class="wrapper">
+        <div class="item item1">#DMA</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
+    </div>
+
+    <!--PC -->
+    <div class="aboutme-cont">
+      <p>Despre Noi</p>
+      <div id="spec" class="aboutme-hov">
+        <div class="aboutme-cont">
+          <div class="text-about"><p>
+        La DMA, construim site-uri web complete – de la design și structură până la configurare și lansare online. Credem că un site web de succes trebuie să fie atât atractiv vizual, cât și ușor de utilizat, motiv pentru care oferim soluții personalizate, adaptate nevoilor fiecărui client.
+        </p></div>
+        <div class="text-about"><p>
+La DMA, punem mare accent pe comunicare și transparență, pentru ca rezultatul final să reflecte exact ceea ce îți dorești. Indiferent dacă ai nevoie de un site de prezentare, un magazin online sau un blog, echipa noastră te ajută să obții o prezență digitală profesională și eficientă.
+      </p></div>
+        </div>
+        <div class="aboutme-img">
+          <img class="undrown" src="Images/undrown.svg">
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="aboutme-cont2">
+      <p>Despre Noi</p>
+      <div id="spec" class="aboutme-hov2">
+        <div class="aboutme-cont2">
+          <div class="text-about2"><p>
+        La DMA, construim site-uri web complete – de la design și structură până la configurare și lansare online. Credem că un site web de succes trebuie să fie atât atractiv vizual, cât și ușor de utilizat, motiv pentru care oferim soluții personalizate, adaptate nevoilor fiecărui client.
+        </p></div>
+        <div class="aboutme-img">
+          <img class="undrown" id="sp" src="Images/undrown.svg">
+        </div>
+        <div class="text-about2"><p>
+La DMA, punem mare accent pe comunicare și transparență, pentru ca rezultatul final să reflecte exact ceea ce îți dorești. Indiferent dacă ai nevoie de un site de prezentare, un magazin online sau un blog, echipa noastră te ajută să obții o prezență digitală profesională și eficientă.
+      </p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cont" class="hidden">
+  <p id="languages">Limbaje:</p>
+  <div id="wrapper">
+    <i id="leftBtn" class="fa-solid fa-angle-left"></i>
+    <ul id="carousel">
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/html.jpg" class="imagess" />
+        </div>
+        <p class="title">HTML</p>
+        <p class="description">Este limbajul fundamental folosit pentru structurarea conținutului unei pagini web, definind elemente precum titluri, text, imagini și linkuri.</p>
+        <button id="btnn1">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/css.jpg" class="imagess" />
+        </div>
+        <p class="title">CSS</p>
+        <p class="description">Permite stilizarea elementelor HTML și controlează aspectul vizual al site-ului web, inclusiv culorile, fonturile, aspectul și efectele grafice.</p>
+        <button id="btnn2">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/js.jpg" class="imagess" />
+        </div>
+        <p class="title">JavaScript</p>
+        <p class="description">Un limbaj de programare care adaugă interactivitate paginilor web, permițând acțiuni dinamice și actualizări de conținut în timp real.</p>
+        <button id="btnn3">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/node.jpg" class="imagess" />
+        </div>
+        <p class="title">Node.js</p>
+        <p class="description">Un mediu de execuție care permite JavaScript să ruleze pe partea de server, permițând o dezvoltare backend rapidă, scalabilă și eficientă.</p>
+        <button id="btnn4">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/express.jpg" class="imagess" />
+        </div>
+        <p class="title">Express.js</p>
+        <p class="description"> Un framework web ușor pentru Node.js care simplifică construirea API-urilor și a aplicațiilor server-side cu funcții puternice de rutare și middleware.</p>
+        <button id="btnn5">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/mongodb.png" class="imagess" />
+        </div>
+        <p class="title">MongoDB</p>
+        <p class="description">O bază de date NoSQL care stochează date în documente flexibile, de tip JSON, facilitând gestionarea seturilor de date mari, nestructurate și în continuă evoluție.</p>
+        <button id="btnn6">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/php.jpg" class="imagess" />
+        </div>
+        <p class="title">PHP</p>
+        <p class="description">Un limbaj de programare pe partea de server utilizat pentru generarea de conținut dinamic și interacțiunea cu bazele de date în aplicațiile web.</p>
+        <button id="btnn7">Info <span>↗</span></button>
+      </li>
+      <li class="card">
+        <div class="img-container">
+          <img src="Images/mysql.jpg" class="imagess" />
+        </div>
+        <p class="title">MySql</p>
+        <p class="description">Un sistem de gestionare a bazelor de date relaționale utilizat pentru stocarea și organizarea eficientă a datelor unui site web.</p>
+        <button id="btnn8">Info <span>↗</span></button>
+      </li>
+    </ul>
+    <i id="rightBtn" class="fa-solid fa-angle-right"></i>
+  </div>
+</div>
+
+<div class="wrapper">
+        <div class="item item1">#DMA</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
+    </div>
+
+<!--
+<div id="all-projects-container" class="hidden">
+  <p id="projects-title">My Projects:</p>
+  <div id="projects-container">
+    Content Projects
+    <div class="all-project">
+      <p class="project-title">ePlants</p>
+      <div class="project-container">
+
+      </div>
+    </div>
+
+    <div class="all-project">
+      <p class="project-title">Profinex</p>
+      <div class="project-container">
+        
+      </div>
+    </div>
+    </div>
+      
+
+    </div>
+</div>-->
+<!--
+    <div class="new-proj">
+      <p>New Project</p>
+      <div class="cont-proj">
+        <p>Something great is coming, a fun new website for everyone.</p>
+      </div>
+    </div>-->
+
+<div id="all-projects-container" class="hidden">
+  <p id="project-title">Proiectele Noastre:</p>
+  <div id="content-pr">
+    <!--<p class="comming">Se apropie ceva grozav, un site web nou și distractiv pentru toată lumea.<a href="https://online-nx41.onrender.com/login" class="check-here">Vezi Site</a></p>
+-->
+
+    <div class="els">
+      <p class="tit">Profinex</p>
+      <div class="conn">
+        <!-- To Build -->
+        
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <img id='ProfinexImg' src="ProjectsJpg/Profinex/Profinex1.jpg" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>Profinex</span>
+            <p class="site-des">Profinex este un site web creat pentru un client cu scopul de a prezenta serviciile oferite într-un mod modern, dar și o adresă de e-mail pentru contact.</p></div>
+          
+          <button id="ProfinexSite">Vezi Site <span>↗</span></button>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+    <!-- PROIECTTTTTTTTTTTTTTTTTTT -->
+    <div class="els">
+      <p class="tit">Coffee & Tea</p>
+      <div class="conn">
+        <!-- To Build -->
+        
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <img id='ProfinexImg' src="Images/coffee.png" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>Coffee & Tea</span>
+            <p class="site-des">Coffee & Tea este un proiect dedicat unei firme de exercitiu, scopul site-ului este de a avea o prezenta online, descriere servicii si produse + cumpararea online a acstora. </p></div>
+          
+          <a href='https://coffee.mihaii.com/'><button id="ProfinexSite">Vezi Site <span>↗</span></button></a>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+    <!-- PROIECTTTTTTTTTTTTTTTTTTT -->
+    <div class="els">
+      <p class="tit">mihaii.com</p>
+      <div class="conn">
+        <!-- To Build -->
+        
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <img id='ProfinexImg' src="Images/creator.png" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>mihaii.com</span>
+            <p class="site-des">mihaii.com este site-ul oficial al creatorului tuturor site-urilor din portofoliu. Dar si domenilu principal al tuturor proiectelor create de acesta.</p></div>
+          
+          <a href='https://mihaii.com/'><button id="ProfinexSite">Vezi Site <span>↗</span></button></a>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+    <div class="els">
+      <p class="tit">ePlants</p>
+      <div class="conn">
+        <!-- To Build -->
+      
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left0" class="fa-solid fa-angle-left"></i>
+          <img id="ePlantsImg" src="ProjectsJpg/ePlants/ePlants1.jpg" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right0" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>ePlants</span>
+            <p class="site-des">ePlants este realizat de devMihai și este un portofoliu pentru toate aplicațiile, de la depozitul JSON local până la jocuri precum Ghicește numărul sau animații de derulare.</p></div>
+          
+          <button id="ePlantsSite">Vezi Site <span>↗</span></button>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+    <!-- PROIECTTTTTTTTTTTTTTTTTTT -->
+    <div class="els">
+      <p class="tit">Mongo Athlas</p>
+      <div class="conn">
+        <!-- To Build -->
+        
+        <!--------------------------->
+        <div class="img-cont">  
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <img id='ProfinexImg' src="Images/online.png" class="img">
+          <!--<div class="soon-div"><p class="soon">SOON</p></div>-->
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--------------------------->
+        <div class="text-cont">
+          <div class="width-p">
+            <span class='des-title'>Mongo Athlas</span>
+            <p class="site-des">Mongo Athlas este un proiect dedicat site-urilor bazate pe servere (node.js), care pot transmite informatii catre o baza de date.</p></div>
+          
+          <a href="https://online-nx41.onrender.com/login"><button id="ProfinexSite">Vezi Site <span>↗</span></button></a>
+        </div>
+        <!--------------------------->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- CONTACT -->
+
+<div id="all-contact-container" class="hidden">
+  <p id="contact-title">Contacteaza-ne:</p>
+  <div id="contact-container">
+    <!--Content Projects-->
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="049bd191-5a6d-4617-8e77-501a20a2e3c7">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <label class="name">Nume:</label>
+    <input class="name" type="text" name="name" required><br>
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+    <textarea name="message" required placeholder="Message.."></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;"><br>
+
+    <!-- Custom Confirmation / Success Page -->
+    <input type="hidden" name="redirect" value="https://mihaii.com/send.html">
+
+    <div id="submit-container">
+      <button type="submit" id="submit">Trimite</button>
+    </div>
+</form>
+  </div>
+</div>
+
+  <!--
+    <br><br><br><br><br><br><br>
+        <p class="p">Official site of dev<span style="color: rgb(184, 13, 184)">Mihai</span></p>
+        <p class="p">In work!</p>
+        <p class="p">Date: 16.06.2025</p><br><br><br><br><br><br><br>-->
+
+    <script src="action.js" defer></script>
+
+    <!--<script src="animation.js" defer></script>-->
+
+    <br><br>
+    <footer>
+      <p>© 2025 DMA. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
+
+<!--(4, 27, 41)-->
