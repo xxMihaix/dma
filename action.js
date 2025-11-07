@@ -70,7 +70,7 @@ let btn2 = [
 
 btn1.forEach(btn => {
   btn.addEventListener('click', function() {
-    const offset = document.getElementById('all-projects-container').getBoundingClientRect().top + window.pageYOffset -100;
+    const offset = document.getElementById('all-projects-container').getBoundingClientRect().top + window.pageYOffset +100;
     window.scrollTo({ top: offset, behavior: 'smooth'});
   })
 })
@@ -117,7 +117,7 @@ document.getElementById('btnn8').addEventListener('click', function() {
 })
 
 /////////////////////////////////////////
-
+/*
 document.getElementById('ePlantsSite').addEventListener('click', function(){
   window.location.href = 'https://eplants.mihaii.com/';
 })
@@ -210,7 +210,7 @@ left.addEventListener('click', function() {
 })
 
 })
-
+*/
 
 
 
