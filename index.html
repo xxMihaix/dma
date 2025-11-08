@@ -20,7 +20,7 @@
   <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="pvbTRIC2vLZSn26e-xf_I";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
-  <div class="bodyy"></div>
+  <div class="bodyy" id="bdy"></div>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZV0JRYBH"></script>
   <script>
@@ -31,91 +31,74 @@
     gtag('config', 'G-K2ZV0JRYBH');
   </script>
 
-    <div id="pc-navbar">
-        <div id="logo-container">
-            <div class="logoc">
-              <img src="Images/dma_LOGO.png" class="lgo"></div>
-        </div>
-        <ul>
-            <li><button class="nv-btn" data-target="inv-nav1">Acasa</button></li>
-            <li><button class="nv-btn" data-target="cont">Limbaje</button></li>
-            <li><button class="nv-btn" data-target="project-tit"><span style="color: rgb(2, 99, 156);">Proiecte</span></button></li>
-            <li><button class="nv-btn" data-target="all-contact-container">Contact</button></li>
-        </ul>
+<div id="all-analytic-container">
+  <div id="analytic-container">
+    <p id="analytic-title">Google Analytics</p>
+    <img src="Images/GoogleAnalytics.png">
+    <button id="close">Inchide</button>
+  </div>
+</div>
+<div id="pc-navbar">
+  <div id="logo-container">
+    <div class="logoc">
+      <img src="Images/onlyLogo.png" class="lgo"><p class="dma">DMA</p>
     </div>
-    <div id="mobile-navbar">
-        <div id="logo-container">
-            <div class="logoc">
-              <img src="Images/dma_LOGO.png" class="lgo"></div>
-        </div>
-        <img src="Images/menu.svg" id="menu">
+  </div>
+  <ul>
+    <li><button id="acasa1" class="nv-btn" data-target="inv-nav1">Acasa</button></li>
+    <li><button id="desprenoi1" class="nv-btn" data-target="cont">Despre Noi</button></li>
+    <li><button id="btn" class="nv-btn" data-target="project-tit"><span
+          style="color: rgb(10, 155, 238);">Proiecte</span></button></li>
+    <li><button id="contact1" class="nv-btn" data-target="--">Contact</button></li>
+  </ul>
+</div>
+<div id="mobile-navbar">
+  <div id="logo-container2">
+    <div class="logoc">
+      <img src="Images/onlyLogo.png" class="lgo"><p class="dma">DMA</p>
     </div>
-    
-    <!--PC-->
-    <div id="pc-hero" >
-        <div id="inv-nav1" class="inv-nav"></div>
-        <div id="hero">
-        <!-- HERO 1 -->
-        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Salut, suntem <span id="mihai" class="purple">DMA</span></p>
-            <!--<div class="container">
-                <span class="text first-tect">I'm a</span>
-            </div>-->
-            <p id="text-hero2" class="hero-text">Construim site-uri complete – de la design și structură până la configurarea domeniului și lansarea online, gestionând fiecare detaliu pentru a asigura o prezență online profesională și fără probleme.</p>
-            <div id="btn-container">
-                <button class="btn" id="btn1">Proiecte</button>
-                <button class="btn" id="btn2">Contact</button>
-            </div>
-        </div>
-        <!-- HERO 2 -->
-        <div id="video-container" class="hero-el">
-            <video autoplay muted loop id="video">
-                <source src="Images/Vdeeo.mp4"></source>
-            </video>
-        </div>
-    </div>
-    </div>
+  </div>
+  <img src="Images/menu.svg" id="menu">
+</div>
+<!-- Navbar -->
+<div class="header-container" id="acasa">
+  <!-- Video ca fundal -->
+  <video src="Images/HeroVideooo.mp4" video.playbackRate=0.2; class="video" autoplay muted loop playsinline></video>
 
-    <div id="mobile-hero" >
-        <div id='inv-nav2' class="inv-nav"></div>
-        <div id="hero">
-        <!-- HERO 1 -->
-        <div id="text-hero" class="hero-el"><p id="text-hero1" class="hero-text">Salut, suntem <span id="mihai" class="purple">DMA</span></p>
-            <p id="text-hero2" class="hero-text"> Construim site-uri complete – de la design și structură până la configurarea domeniului și lansarea online, gestionând fiecare detaliu pentru a asigura o prezență online profesională și fără probleme.</p>
-        </div>
-        <!-- HERO 2 -->
-        <div id="video-container" class="hero-el">
-            <video autoplay muted loop id="video">
-                <source src="Images/Vdeeo.mp4"></source>
-            </video>
-        </div>
-        <div id="btn-container">
-                <button class="btn" id="btn3">Proiecte</button>
-                <button class="btn" id="btn4">Contact</button>
-        </div>
+  <!-- Text și butoane peste video -->
+  <div class="principal-text">
+    <p class="title-prin">Digitalizarea Micilor Afaceri</p>
+    <p class="descriptionn">Experiență, inovație și rezultate – toate într-o singură echipă!</p>
+    <div class="buttons-go">
+      <button id="desprenoi3">Despre Noi <span>↗</span></button>
+      <button id="contact3">Contact <span>↗</span></button>
     </div>
-    </div>
+  </div>
+</div>
 
-    <div id="dropdown-container">
-        <div class="el"><button class="nv-btn" data-target="mobile-hero">Acasa</button></div>
-        <div class="el"><button class="nv-btn" data-target="cont">Limbaje</button></div>
-        <div class="el"><button class="nv-btn" data-target="project-tit"><span style="color: rgb(2, 99, 156);">Proiecte</span></button></div>
-        <div class="el"><button class="nv-btn" data-target="all-contact-container">Contact</button></div>
-    </div>
+<div id="dropdown-container">
+  <div class="el"><button id="acasa2" class="nv-btn" data-target="mobile-hero">Acasa</button></div>
+  <div class="el"><button id="desprenoi2" class="nv-btn" data-target="cont">Despre Noi</button></div>
+  <div class="el"><button class="nv-btn" data-target="project-tit"><span
+        style="color: rgb(10, 155, 238);">Proiecte</span></button></div>
+  <div class="el"><button id="contact2" class="nv-btn" data-target="all-contact-container">Contact</button></div>
+</div>
 
-    <div class="wrapper">
-        <div class="item item1">#DMA</div>
-        <div class="item item2">#Designer</div>
-        <div class="item item3">#Frontend</div>
-        <div class="item item4">#Developer</div>
-        <div class="item item5">#Backend</div>
-        <div class="item item6">#Freelancer</div>
-        <div class="item item7">#Architect</div>
-        <div class="item item8">#Engineer</div>
-    </div>
+
+<div class="wrapper hidden">
+  <div class="item item1">#DMA</div>
+  <div class="item item2">#Designer</div>
+  <div class="item item3">#Frontend</div>
+  <div class="item item4">#Developer</div>
+  <div class="item item5">#Backend</div>
+  <div class="item item6">#Freelancer</div>
+  <div class="item item7">#Architect</div>
+  <div class="item item8">#Engineer</div>
+</div>
 
 <!-- DESPRE NOI -->
-<p class="titlle">Despre Noi</p>
-<div class="center-all" id="center-all1">
+<p class="titlle hidden">Despre Noi</p>
+<div class="center-all hidden" id="center-all1">
   <div class="section" id="section1">
     <div class="content">
       <div class="sec1">
@@ -126,7 +109,7 @@
         </div>
       <div class="sec2">
         <div class="img-sec">
-          <div class="container-img-1"></div>
+          <div id="analytic" class="container-img-1"></div>
           <div class="container-img-2"><a
               href='https://www.google.ro/maps/place/Colegiul+Tehnic+Mircea+cel+B%C3%A2tr%C3%A2n/@44.4659576,26.0562517,17.75z/data=!4m6!3m5!1s0x40b20225c07e74d1:0xb8b6b3654e61c3e0!8m2!3d44.4661433!4d26.057437!16s%2Fg%2F1hc2pc797?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D'><button
                 id="see-map">Map <span> ↗</span></button></a></div>
@@ -273,7 +256,7 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper hidden">
         <div class="item item1">#DMA</div>
         <div class="item item2">#Designer</div>
         <div class="item item3">#Frontend</div>
@@ -286,8 +269,8 @@
 
 
 <!-- PROIECTE -->
-        <p class="proj-title" id="project-tit">Clientii nostri:</p>
-        <div class="center-all" id="center-all2">
+        <p class="proj-title hidden" id="project-tit">Clientii nostri:</p>
+        <div class="center-all hidden" id="center-all2">
             <div class="section" id="section2">
                 <div class="content project-container-all" id="project-container-all">
 
@@ -299,7 +282,7 @@
         </div>
 <!-- Q&A -->
 
-<div class="cont-questions">
+<div class="cont-questions hidden">
   <p class="quest-title">Intrebari Frecvente:</p>
   <!-- Question 1 -->
   <div class="quest-container">
@@ -332,7 +315,7 @@
       <p class="text-question">Cât costă un site şi ce îți oferim?</p>
     </div>
     <div class="quest-answer">
-      <p class="text-answer">Pachet de bază pornind de la 1090€.<br>
+      <p class="text-answer">Pachet de bază pornind de la 490€.<br>
         Ce include: design personalizat şi responsive, optimizare de bază SEO, securitate, integrare elemente de
         contact,
         suport după livrare.<br>
@@ -357,8 +340,8 @@
 </div>
 
 <!-- CONTACT -->
-<p class="title" id="title3">Contacteaza-ne</p>
-<div class="center-all" id="center-all3">
+<p class="title hidden" id="title3">Contacteaza-ne</p>
+<div class="center-all hidden" id="center-all3">
   <div class="section" id="section3">
     <div class="contentt">
       <div class="sect2">
@@ -467,11 +450,23 @@
         <p class="p">In work!</p>
         <p class="p">Date: 16.06.2025</p><br><br><br><br><br><br><br>-->
 
+    <br><br>
+    <div class="wrapper">
+        <div class="item item1">#DMA</div>
+        <div class="item item2">#Designer</div>
+        <div class="item item3">#Frontend</div>
+        <div class="item item4">#Developer</div>
+        <div class="item item5">#Backend</div>
+        <div class="item item6">#Freelancer</div>
+        <div class="item item7">#Architect</div>
+        <div class="item item8">#Engineer</div>
+    </div>
+
+
     <script src="action.js" defer></script>
     <script src="projects.js" defer></script>
+    <script src="animation.js" defer></script>
     <!--<script src="animation.js" defer></script>-->
-
-    <br><br>
     <footer>
         <div class="footer">
             <div class="up-footer">

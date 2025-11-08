@@ -58,28 +58,64 @@ buttons.forEach((button) => {
   })
 })
 
-let btn1 = [
-  document.getElementById('btn1'),
-  document.getElementById('btn3')
+let acasa = [
+  document.getElementById('acasa1'),
+  document.getElementById('acasa2')
 ]
 
-let btn2 = [
-  document.getElementById('btn2'),
-  document.getElementById('btn4')
+let desprenoi = [
+  document.getElementById('desprenoi1'),
+  document.getElementById('desprenoi2'),
+  document.getElementById('desprenoi3')
 ]
 
-btn1.forEach(btn => {
+let contact = [
+  document.getElementById('contact1'),
+  document.getElementById('contact2'),
+  document.getElementById('contact3')
+]
+
+acasa.forEach(btn => {
   btn.addEventListener('click', function() {
-    const offset = document.getElementById('all-projects-container').getBoundingClientRect().top + window.pageYOffset +100;
+    const offset = document.getElementById('acasa').getBoundingClientRect().top + window.pageYOffset -100;
     window.scrollTo({ top: offset, behavior: 'smooth'});
   })
 })
 
-btn2.forEach(btn => {
-  btn.addEventListener('click', function(){
-    const offset2 = document.getElementById('all-contact-container').getBoundingClientRect().top + window.pageYOffset -100;
-    window.scrollTo({ top: offset2, behavior:'smooth' })
+desprenoi.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const offset = document.getElementById('center-all1').getBoundingClientRect().top + window.pageYOffset -160;
+    window.scrollTo({ top: offset, behavior: 'smooth'});
   })
+})
+
+contact.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const offset = document.getElementById('center-all3').getBoundingClientRect().top + window.pageYOffset -160;
+    window.scrollTo({ top: offset, behavior: 'smooth'});
+  })
+})
+
+const analyticBtn = document.getElementById('analytic');
+const analyticContainer = document.getElementById('all-analytic-container');
+const analyticClose = document.getElementById('close');
+
+analyticBtn.addEventListener('click', function(){
+  analyticContainer.classList.add('active');
+})
+
+analyticClose.addEventListener('click', function(){
+  analyticContainer.classList.remove('active');
+})
+
+document.getElementById('logo-container').addEventListener('click', function(){
+  const offset = document.getElementById('acasa').getBoundingClientRect().top + window.pageYOffset -100;
+  window.scrollTo({ top: offset, behavior: 'smooth'});
+})
+
+document.getElementById('logo-container2').addEventListener('click', function(){
+  const offset = document.getElementById('acasa').getBoundingClientRect().top + window.pageYOffset -100;
+  window.scrollTo({ top: offset, behavior: 'smooth'});
 })
 
 /////////////////////////////////////////
