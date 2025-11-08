@@ -1390,14 +1390,14 @@ p{
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    gap: 10px;
+    gap: 15px;
 }
 
 .quest-title{
     color: white;
     font-size:30px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .quest-title.active{
@@ -1487,7 +1487,7 @@ p{
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 20px;
     color: white;
 }
