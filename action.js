@@ -116,6 +116,27 @@ document.getElementById('btnn8').addEventListener('click', function() {
   window.location.href = 'https://en.wikipedia.org/wiki/MySQL';
 })
 
+//FQA
+
+const questions = document.querySelectorAll('.quest-question');
+const answers = document.querySelectorAll('.quest-answer');
+
+questions.forEach((question, index) => {
+    question.addEventListener('click', () => {
+        // Toggle clasa doar pentru elementul selectat
+        question.classList.toggle('active');
+        answers[index].classList.toggle('active');
+
+        // Scoate active de la toate celelalte
+        questions.forEach((q, i) => {
+            if (i !== index) q.classList.remove('active');
+        });
+        answers.forEach((a, i) => {
+            if (i !== index) a.classList.remove('active');
+        });
+    });
+});
+
 /////////////////////////////////////////
 /*
 document.getElementById('ePlantsSite').addEventListener('click', function(){
